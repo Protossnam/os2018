@@ -1,0 +1,46 @@
+>> echo hello world
+hello world
+>>passwd
+Changing password for protossnam.
+(current) UNIX password: 
+Enter new UNIX password: 
+Retype new UNIX password: 
+passwd: password updated successfully
+>> date
+Fri, 05 Jan 2018 11:31:42 ICT
+>> hostname
+protossnam-virtual-machine
+>> arch
+x86_64
+>> uname -a
+Linux protossnam-virtual-machine 4.10.0-28-generic #32~16.04.2-Ubuntu SMP Thu Jul 20 10:19:48 UTC 2017 x86_64 x86_64 x86_64 GNU/Linux
+>> dmesg
+[    9.170224] AES CTR mode by8 optimization enabled
+[    9.596101] Adding 4191228k swap on /dev/sda5.  Priority:-1 extents:1 across:4191228k FS
+[   10.403316] IPv6: ADDRCONF(NETDEV_UP): ens33: link is not ready
+[   10.410402] e1000: ens33 NIC Link is Up 1000 Mbps Full Duplex, Flow Control: None
+[   11.185832] floppy0: no floppy controllers found
+[   11.185861] work still pending
+[   20.237528] ISO 9660 Extensions: Microsoft Joliet Level 3
+[   20.251450] ISO 9660 Extensions: RRIP_1991A
+>> uptime
+ 11:33:11 up 4 min,  1 user,  load average: 0,08, 0,20, 0,10
+>> who am i
+>> whoami
+protossnam
+>>  who
+protossnam tty7         2018-01-05 11:28 (:0)
+>> id
+uid=1000(protossnam) gid=1000(protossnam) groups=1000(protossnam),4(adm),24(cdrom),27(sudo),30(dip),46(plugdev),113(lpadmin),128(sambashare)
+>> last
+protossn tty7         :0               Fri Jan  5 11:28    gone - no logout
+reboot   system boot  4.10.0-28-generi Fri Jan  5 11:28   still running
+
+wtmp begins Fri Jan  5 11:28:28 2018
+>> finger
+Login       Name       Tty      Idle  Login Time   Office     Office Phone
+protossnam  Vinh-Nam   tty7       13  Jan  5 11:28 (:0)
+>> w
+ 11:34:08 up 5 min,  1 user,  load average: 0,30, 0,24, 0,11
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+protossn tty7     :0               11:28    5:38   3.42s
