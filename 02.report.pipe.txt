@@ -1,0 +1,22 @@
+>> $ ls | grep list
+
+>> $ ls /etc/passwd | wc -l
+1
+
+>> $ free | grep "Mem" | awk '{print $2}' | cat > 02.report.pipe.txt
+4025416
+
+>> $ sudo wc < /etc/passwd | cat > 02.report.pipe.txt
+  40   69 2253
+
+>> $ sudo cat /proc/cpuinfo | grep cores > 02.report.pipe.txt
+cpu cores	: 1
+
+>> $ cd Pictures
+>> $ find . -type f -name "*.jpg" | cat > 02.report.pipe.txt
+./Amazing_Grace_Tall_Ship_sailing_in_Pacific_Ocean.jpg
+./Port_of_Łeba_-_Tall_ship_02.jpg
+
+>> $ find . -type f -name "*.jpg" | wc -l| 02.report.pipe.txt
+2
+
