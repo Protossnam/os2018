@@ -1,0 +1,36 @@
+>> ps -aux | grep protoss | grep firefox | awk '{print $2}'
+1905
+1952
+2911
+3034
+
+>> $ ps -o nlwp 1905
+NLWP
+  56
+
+>> ps -o nlwp 1952
+NLWP
+  23
+
+>> $ ps -o nlwp 2911
+NLWP
+  23
+
+>> ps -o nlwp 3034
+NLWP
+  
+>> ls /proc/1905/task | wc
+     55      55     275
+
+>> ls /proc/1952/task | wc
+     23      23     115
+
+>> ls /proc/2911/task | wc
+     23      23     115
+
+>> ls /proc/3034/task | wc
+ls: cannot access '/proc/3034/task': No such file or directory
+      0       0       0
+
+
+
