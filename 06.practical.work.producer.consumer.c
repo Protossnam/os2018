@@ -46,7 +46,7 @@ int main()
 	fc.unit = 0;
 	
 	Ff.type = 1;
-	Ff.amount = 10;
+	Ff.amount = 7;
 	Ff.unit = 1;
 
 	produce(&fc);
